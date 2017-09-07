@@ -31,9 +31,10 @@ $ npm install jc-lattice-drawing --save
     var LatticeDrawing = require('jc-lattice-drawing')
     var lattice = new LatticeDrawing('.lattice')
 ````
-##Doc
 
-####latticeMap
+## Doc
+
+#### latticeMap
 >inner the module,I had plant a default latticMap of decimal digit. So you can use renderNumber() function directly do not care about lattice map
 example:
 
@@ -62,7 +63,7 @@ example:
 }
 ````
 
-####options
+#### options
 ````
 options:{
             color: '#999',//not required,default:#000
@@ -73,14 +74,14 @@ options:{
         }
 ````   
 
-####render(string,latticMap, options)
-> with custom lattice you can make amazing image
+#### render(string,latticMap, options)
+> with custom lattice you can make amazing image~
 ````
     string : the trigger of latticMap
 ````
-####renderNumber(string, options)
+#### renderNumber(string, options)
 
-####renderNumber(string, options)
+#### renderNumber(string, options)
 
-####clear()
+#### clear()
 > clear all

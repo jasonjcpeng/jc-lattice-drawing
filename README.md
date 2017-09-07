@@ -1,12 +1,12 @@
 #Lattice Drawing
-<hr>
+<hr/>
 <span style="font-weight:600">The tool made with <span style="color:#cb3837">canvas</span> be use for create image with lattice map</span>
 ##Installation
-<hr>
+<hr/>
 ````
 $ npm install jc-lattice-drawing --save
 ````
-##Usage<hr>
+##Usage<hr/>
 * <span style="font-weight:600"><span style="color:#cb3837">First</span> you need a div container like this</span>
 ````html
     <div class="lattice" style="height:1000px;width:1000px"></div>
@@ -32,7 +32,7 @@ $ npm install jc-lattice-drawing --save
     var lattice = new LatticeDrawing('.lattice')
 ````
 ##Doc
-<hr>
+<hr/>
 ####latticeMap
 >inner the module,I had plant a default latticMap of decimal digit. So you can use renderNumber() function directly do not care about lattice map
 

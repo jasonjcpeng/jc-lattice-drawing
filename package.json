@@ -11,10 +11,10 @@
     "canvas"
   ],
   "repository": {
-    "type": "github",
+    "type": "git",
     "url": "https://github.com/jasonjcpeng/jc-lattice-drawing.git"
   },
-  "author": "JasonPeng",
+  "author": "jasonjcpeng",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {

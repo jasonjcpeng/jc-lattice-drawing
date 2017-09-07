@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="lattice" style="height:1300px;width:1300px"></div>
+</body>
+<script src="../dist/index.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+    var lattice = new LatticeDrawing('.lattice')
+    var options = {
+        color: '#999',
+        latticeMargin: 1,
+        atomShape: 'cycle',
+        atomMargin: 2,
+        atomRadius: 8
+    }
+    var flag = true
+    window.setInterval(function () {
+        lattice.clear()
+        var date = new Date()
+        if(flag){
+            lattice.renderNumber((date.getHours()<10?'0'+date.getHours():date.getHours())+':'+(date.getMinutes()<10?'0'+date.getMinutes():date.getMinutes())+':'+(date.getSeconds()<10?'0'+date.getSeconds():date.getSeconds()), options)
+        }else{
+            lattice.renderNumber((date.getHours()<10?'0'+date.getHours():date.getHours())+' '+(date.getMinutes()<10?'0'+date.getMinutes():date.getMinutes())+' '+(date.getSeconds()<10?'0'+date.getSeconds():date.getSeconds()), options)
+        }
+        flag = !flag
+    }, 500)
+
+}
+</script>
+</html>

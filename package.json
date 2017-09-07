@@ -1,0 +1,24 @@
+{
+  "name": "jc-lattice-drawing",
+  "version": "0.0.1",
+  "description": "canvas lattice drawing tool",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "dev",
+    "build": "webpack"
+  },
+  "keywords": [
+    "canvas"
+  ],
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/jasonjcpeng/jc-lattice-drawing.git"
+  },
+  "author": "JasonPeng",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.5.5"
+  }
+}

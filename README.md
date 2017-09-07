@@ -12,7 +12,7 @@ $ npm install jc-lattice-drawing --save
 ````
 >The lattice drawing module will adapt the div container`s height and width ,and be word wrap automatically
 * Just use it in original
-```javascript
+````javascript
     window.onload = function () {
         var lattice = new LatticeDrawing('.lattice')
         var options = {
@@ -31,13 +31,14 @@ $ npm install jc-lattice-drawing --save
     var LatticeDrawing = require('jc-lattice-drawing')
     var lattice = new LatticeDrawing('.lattice')
 ````
+
 ##Doc
 
 ####latticeMap
 >inner the module,I had plant a default latticMap of decimal digit. So you can use renderNumber() function directly do not care about lattice map
 
 example:
-````json
+````
 {
     "0": [
         [0, 1, 1, 1, 1, 1, 1, 0],
@@ -61,7 +62,9 @@ example:
     ]
 }
 ````
+
 ####options
+
 ````
 options:{
             color: '#999',//not required,default:#000
@@ -71,12 +74,16 @@ options:{
             atomRadius: 8 //not required,each atom`s radius
         }
 ````   
+
 ####render(string,latticMap, options)
+
 > with custom lattice you can make amazing image
 ````
     string : the trigger of latticMap
 ````
 ####renderNumber(string, options)
+
 ####renderNumber(string, options)
+
 ####clear()
 > clear all

@@ -1,17 +1,17 @@
-#Lattice Drawing
-<span style="font-weight:600">The tool made with <span style="color:#cb3837">canvas</span> be use for create image with lattice map</span>
+# Lattice Drawing
+The tool made with canvas be use for create image with lattice map
 
-##Installation
+## Installation
 ````
 $ npm install jc-lattice-drawing --save
 ````
-##Usage
-* <span style="font-weight:600"><span style="color:#cb3837">First</span> you need a div container like this</span>
+## Usage
+* First you need a div container like this
 ````html
     <div class="lattice" style="height:1000px;width:1000px"></div>
 ````
 >The lattice drawing module will adapt the div container`s height and width ,and be word wrap automatically
-* <span style="font-weight:600">Just use it in <span style="color:#cb3837">original</span></span>
+* Just use it in original
 ```javascript
     window.onload = function () {
         var lattice = new LatticeDrawing('.lattice')
@@ -25,7 +25,8 @@ $ npm install jc-lattice-drawing --save
         lattice.renderNumber(String,options)//render an uninterrupted image with default Number lattice map
     }
 ````
-* <span style="font-weight:600">use it in <span style="color:#cb3837">CommonJS</span></span>
+
+* use it in CommonJS
 ````javascript
     var LatticeDrawing = require('jc-lattice-drawing')
     var lattice = new LatticeDrawing('.lattice')
@@ -35,7 +36,7 @@ $ npm install jc-lattice-drawing --save
 ####latticeMap
 >inner the module,I had plant a default latticMap of decimal digit. So you can use renderNumber() function directly do not care about lattice map
 
-<span style="color:#cb3837">example:</span>
+example:
 ````json
 {
     "0": [

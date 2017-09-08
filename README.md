@@ -13,6 +13,7 @@ $ npm install jc-lattice-drawing --save
 >The lattice drawing module will adapt the div container`s height and width ,and be word wrap automatically
 * Just use it in original
 ````javascript
+    <script src="../node_modules/jc-lattice-drawing/dist/index.js"></script>
     window.onload = function () {
         var lattice = new LatticeDrawing('.lattice')
         var options = {
